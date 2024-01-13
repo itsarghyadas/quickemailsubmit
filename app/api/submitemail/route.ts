@@ -6,7 +6,7 @@ export async function POST(request: Request) {
   console.log("useremail:", useremail);
 
   return Response.json(
-    { emailSubmitted: true },
+    { status: 200, emailSubmitted: true },
     {
       headers: {
         "Access-Control-Allow-Origin": "*",
