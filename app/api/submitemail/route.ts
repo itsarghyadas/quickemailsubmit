@@ -3,8 +3,6 @@ export const dynamic = "force-dynamic";
 export async function POST(request: Request) {
   const bodyData = await request.json();
   const { useremail } = bodyData;
-  console.log("useremail:", useremail);
-
   return Response.json(
     { status: 200, emailSubmitted: true },
     {
